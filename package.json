@@ -16,7 +16,9 @@
     "axios": "^0.18.1",
     "firebase": "^7.6.1",
     "quasar": "^1.0.0",
-    "vue-mouse-parallax": "^1.2.2"
+    "vue-mouse-parallax": "^1.2.2",
+    "vue-smooth-scroll": "^1.0.13",
+    "vue-smoothscroll": "^0.2.0"
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0",

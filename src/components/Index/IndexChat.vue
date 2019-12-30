@@ -1,6 +1,6 @@
 <template>
     <div class="container-bt q-pt-xl">
-        <div class="row text-center q-pb-xl">
+        <div class="row text-center q-pb-xl" id="div-id">
             <div class="col-sm-12">
                 <div class="text-h3 text-deep-purple q-pt-xl text-weight-bolder">Lorem Ipsum is simply dummy text of the printing.</div>
             </div>

@@ -13,7 +13,7 @@
                                     </q-card-section>
 
                                     <q-card-section>
-                                        <q-input color="deep-purple" bottom-slots v-model="text" label="Nome da carta" :dense="dense">
+                                        <q-input color="deep-purple" bottom-slots label="Nome da carta">
                                         </q-input>
                                     </q-card-section>
 
@@ -36,7 +36,7 @@
                                     </q-card-section>
 
                                    <q-card-section>
-                                        <q-input bottom-slots v-model="text" label="Região" :dense="dense">
+                                        <q-input bottom-slots label="Região">
                                             <template v-slot:append>
                                                 <q-icon name="place" />
                                             </template>

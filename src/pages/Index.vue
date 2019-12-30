@@ -6,7 +6,7 @@
           <div class="text-white text-h1 q-pa-sm">Magic</div>
           <div class="text-white text-h1 q-pa-sm">Trade Cards</div>
           <div class="q-pa-md">
-            <q-btn color="white" text-color="black" label="Começar" />
+            <q-btn color="white" text-color="black" label="Começar" type="a" href="#div-id" v-smooth-scroll="{ duration: 3000, offset: -50 }"/>
           </div>
         </div>
       </div>
@@ -233,5 +233,6 @@ body,
   width: 100%;
   direction: ltr;
   height: 100%;
+  scroll-behavior: smooth;
 }
 </style>
