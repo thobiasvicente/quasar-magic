@@ -1,11 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VueParticles from 'vue-particles'
+import { ParallaxContainer, ParallaxElement } from 'vue-mouse-parallax'
 
 // import example from './module-example'
 
 Vue.use(Vuex)
 Vue.use(VueParticles)
+Vue.component('parallax-container', ParallaxContainer)
+Vue.component('parallax-element', ParallaxElement)
 
 /*
  * If not building with SSR mode, you can
