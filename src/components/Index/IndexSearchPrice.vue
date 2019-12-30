@@ -55,10 +55,10 @@
             </div>
             <div class="col-sm-6 q-pt-xl text-center">
                 <div class="q-pt-xl">
-                    <div class="text-h3 text-deep-purple q-pt-xl text-weight-bolder">Lorem Ipsum is simply dummy text of the printing.</div>
+                    <div class="text-h3 text-deep-purple q-pt-xl text-weight-bolder">Utilize nossa ferramenta de Busca.</div>
                 </div>
                 <div class="text-body1 text-indigo q-pt-lg q-pb-lg text-weight-regular">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Com nossa ferramenta de busca, você pode procurar cards filtrando po Nome, Preço e região do vendedor.
                 </div>
                 <div class="q-pt-lg float-left">
                     <q-btn color="deep-purple" label="Começar!" />

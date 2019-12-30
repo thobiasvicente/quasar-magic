@@ -3,10 +3,10 @@
         <div class="row q-pt-xl">
             <div class="col-sm-6 q-pt-xl text-center">
                 <div class="q-pt-xl">
-                    <div class="text-h3 text-deep-purple q-pt-xl text-weight-bolder">Lorem Ipsum is simply dummy text of the printing.</div>
+                    <div class="text-h3 text-deep-purple q-pt-xl text-weight-bolder">Faça postagens de suas Cartas.</div>
                 </div>
                 <div class="text-body1 text-indigo q-pt-lg q-pb-lg text-weight-regular">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Na nossa plataforma você cria postagens sobre sua carta onde ela é vista por outras pessoas no feed.
                 </div>
                 <div class="q-pt-lg float-right">
                     <q-btn color="deep-purple" label="Começar!" />
