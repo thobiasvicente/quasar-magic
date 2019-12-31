@@ -54,7 +54,7 @@ export default {
     url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
     center;
   z-index: 0;
-  filter: brightness(150%);
+  /* filter: brightness(150%); */
 }
 
 .twinkling {

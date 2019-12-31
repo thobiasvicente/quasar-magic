@@ -1,49 +1,53 @@
 <template>
-  <div class="container-bt q-pt-xl stars">
-    <div class="row q-pt-xl flex flex-col items-center justify-center">
-      <div class="text-white text-h1 q-pa-sm">Magic</div>
-      <div class="text-white text-h1 q-pa-sm">Trade Cards</div>
-      <div class="flex items-center">
-        <q-card class="q-pa-xl bg-white">
-          <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-            <q-input
-              filled
-              v-model="name"
-              label="Your name *"
-              hint="Name and surname"
-              lazy-rules
-              :rules="[ val => val && val.length > 0 || 'Please type something']"
-            />
-
-            <q-input
-              filled
-              type="number"
-              v-model="age"
-              label="Your age *"
-              lazy-rules
-              :rules="[
-          val => val !== null && val !== '' || 'Please type your age',
-          val => val > 0 && val < 100 || 'Please type a real age'
-        ]"
-            />
-
-            <q-toggle v-model="accept" label="I accept the license and terms" />
-
-            <div>
-              <q-btn label="Submit" type="submit" color="primary" />
-              <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
-            </div>
-          </q-form>
-        </q-card>
+  <div class="stars">
+    <div class="row q-mt-xl">
+      <div class="col-sm-12 col-xs-12 col-md-12 text-center vertical-middle q-mt-xl">
+        <div class="text-h3 text-white q-pt-xl text-weight-bolder">Faça login para continuar.</div>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-12 text-center q-mt-lg">
+        <q-btn class="q-px-xl q-py-xs" color="purple" label="Login com conta google" @click="login()"></q-btn>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import firebase from "firebase";
+
+export default {
+  methods: {
+    login() {
+      let provider = new firebase.auth.GoogleAuthProvider();
+      provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(result => {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          let token = result.credential.accessToken;
+          // The signed-in user info.
+          let user = result.user;
+          this.$router.push("/home");
+        })
+        .catch(function(error) {
+          // Handle Errors here.
+          let errorCode = error.code;
+          let errorMessage = error.message;
+          // The email of the user's account used.
+          let email = error.email;
+          // The firebase.auth.AuthCredential type that was used.
+          let credential = error.credential;
+          // ...
+        });
+    }
+  }
+};
 </script>
 
 
 <style >
+.my-card {
+  width: 100%;
+  max-width: 250px;
+}
 </style>
