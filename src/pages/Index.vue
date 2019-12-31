@@ -170,53 +170,6 @@ a:visited {
   }
 }
 
-.stars,
-.twinkling,
-.clouds {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.stars {
-  background: rgb(14, 9, 34)
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
-    center;
-  z-index: 0;
-  filter: brightness(150%);
-}
-
-.twinkling {
-  background: transparent
-    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
-    top center;
-  z-index: 1;
-
-  -moz-animation: move-twink-back 200s linear infinite;
-  -ms-animation: move-twink-back 200s linear infinite;
-  -o-animation: move-twink-back 200s linear infinite;
-  -webkit-animation: move-twink-back 200s linear infinite;
-  animation: move-twink-back 200s linear infinite;
-}
-
-.clouds {
-  background: transparent
-    url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top
-    center;
-  z-index: 3;
-
-  -moz-animation: move-clouds-back 200s linear infinite;
-  -ms-animation: move-clouds-back 200s linear infinite;
-  -o-animation: move-clouds-back 200s linear infinite;
-  -webkit-animation: move-clouds-back 200s linear infinite;
-  animation: move-clouds-back 200s linear infinite;
-}
-
 .wrap-banner {
   position: relative;
   -webkit-box-align: center;
@@ -233,6 +186,5 @@ body,
   width: 100%;
   direction: ltr;
   height: 100%;
-  scroll-behavior: smooth;
 }
 </style>
