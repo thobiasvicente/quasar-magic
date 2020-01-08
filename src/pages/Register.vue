@@ -5,7 +5,12 @@
         <div class="text-h3 text-white q-pt-xl text-weight-bolder">Faça login para continuar.</div>
       </div>
       <div class="col-sm-12 col-xs-12 col-md-12 text-center q-mt-lg">
-        <q-btn class="q-px-xl q-py-xs" color="purple" label="Login com conta google" @click="login()"></q-btn>
+        <q-btn
+          class="q-px-xl q-py-xs"
+          color="purple"
+          label="Login com conta google"
+          @click="login()"
+        ></q-btn>
       </div>
     </div>
   </div>

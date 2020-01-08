@@ -6,7 +6,14 @@
           <div class="text-white text-h1 q-pa-sm">Magic</div>
           <div class="text-white text-h1 q-pa-sm">Trade Cards</div>
           <div class="q-pa-md">
-            <q-btn color="white" text-color="black" label="Começar" type="a" href="#div-id" v-smooth-scroll="{ duration: 3000, offset: -50 }"/>
+            <q-btn
+              color="white"
+              text-color="black"
+              label="Começar"
+              type="a"
+              href="#div-id"
+              v-smooth-scroll="{ duration: 3000, offset: -50 }"
+            />
           </div>
         </div>
       </div>
@@ -33,22 +40,17 @@
     <index-chat />
     <index-post />
     <index-search-price />
-
-
-
   </div>
 </template>
 
 <script>
 import firebase from "firebase";
 import IndexChat from "../components/Index/IndexChat";
-import IndexPost from "../components/Index/IndexPost"
-import IndexSearchPrice from "../components/Index/IndexSearchPrice"
-
+import IndexPost from "../components/Index/IndexPost";
+import IndexSearchPrice from "../components/Index/IndexSearchPrice";
 
 export default {
   components: { IndexChat, IndexPost, IndexSearchPrice }
-  
 };
 </script>
 
